@@ -1,0 +1,110 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-box:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #5b21b6;
+  transform: scale(1.05);
+}
+
+/* USER LIST */
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  background: #eef2ff;
+}
+
+/* BUTTON GROUP */
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* EDIT BUTTON */
+
+.edit-btn {
+  background: #22c55e;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
