@@ -1,12 +1,33 @@
-import UserCRUD from "./components/UserCRUD";
+import Auth from "./Auth"
+import Dashboard from "./components/UserCRUD"
+import { useState } from "react"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
-function App() {
+function App(){
 
-  return (
-    <div>
-      <UserCRUD />
-    </div>
-  );
+const [role,setRole]=useState(null)
+const [showAuth,setShowAuth]=useState(false)
+
+return(
+
+<>
+
+{showAuth
+? <Auth setRole={setRole} setShowAuth={setShowAuth}/>
+: <Dashboard role={role} setShowAuth={setShowAuth}/>
 }
 
-export default App;
+<ToastContainer
+position="top-right"
+autoClose={2000}
+theme="dark"
+/>
+
+</>
+
+)
+
+}
+
+export default App

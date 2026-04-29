@@ -15,3 +15,4 @@ db = client.get_database("user_db")
 
 user_collection = db["user_save_fetch"]
 teacher_collection = db["teacher_collection"]
+auth_collection = db["auth_users"]

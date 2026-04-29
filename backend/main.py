@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from routes.user_routes import router
 from fastapi.middleware.cors import CORSMiddleware
 import webbrowser
+from routes.auth_routes import router as auth_router
+
+
 
 app = FastAPI()
 
@@ -14,6 +17,7 @@ app.add_middleware(
 )
 
 app.include_router(router)
+app.include_router(auth_router)
 
 
 @app.on_event("startup")
