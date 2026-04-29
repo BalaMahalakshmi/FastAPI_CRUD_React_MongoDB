@@ -14,3 +14,4 @@ client = MongoClient(MONGO_URI)
 db = client.get_database("user_db")
 
 user_collection = db["user_save_fetch"]
+teacher_collection = db["teacher_collection"]
